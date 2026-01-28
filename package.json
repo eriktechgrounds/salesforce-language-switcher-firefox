@@ -1,0 +1,26 @@
+{
+  "name": "salesforce-user-language-switcher",
+  "version": "1.0.1.0",
+  "description": "Salesforce User Language Switcher",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --mode=development --watch --config config/webpack.config.js",
+    "start": "start http://reload.extensions/",
+    "build": "webpack --mode=production --config config/webpack.config.js",
+    "format": "prettier --write --ignore-unknown \"{config,public,src}/**/*.{html,css,js,ts,json}\""
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^3.0.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.9.0"
+  },
+  "dependencies": {
+    "@salesforce-ux/design-system": "^2.17.3",
+    "size-plugin": "^3.0.0"
+  }
+}
